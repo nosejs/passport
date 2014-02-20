@@ -17,13 +17,13 @@ allows application-level decisions to be made by the developer.  The API is
 simple: you provide Passport a request to authenticate, and Passport provides
 hooks for controlling what occurs when authentication succeeds or fails.
 
-## Install
+## 安装
 
     $ npm install passport
 
-## Usage
+## 使用
 
-#### Strategies
+#### 策略
 
 Passport uses the concept of strategies to authenticate requests.  Strategies
 can range from verifying username and password credentials, delegated
@@ -63,7 +63,7 @@ deserializing.
       });
     });
 
-#### Middleware
+#### 中间件
 
 To use Passport in an [Express](http://expressjs.com/) or
 [Connect](http://senchalabs.github.com/connect/)-based application, configure it
@@ -81,7 +81,7 @@ middleware must also be used.
       app.use(app.router);
     });
 
-#### Authenticate Requests
+#### 验证请求
 
 Passport provides an `authenticate()` function, which is used as route
 middleware to authenticate requests.
@@ -92,7 +92,7 @@ middleware to authenticate requests.
         res.redirect('/');
       });
 
-## Strategies
+## 策略
 
 Passport has a comprehensive set of **over 140** authentication strategies
 covering social networking, enterprise integration, API services, and more.
@@ -111,7 +111,7 @@ The following table lists commonly used strategies:
 |[Google](https://github.com/jaredhanson/passport-google-oauth) | OAuth / OAuth 2.0        |[Jared Hanson](https://github.com/jaredhanson)  |
 |[Twitter](https://github.com/jaredhanson/passport-twitter)     | OAuth                    |[Jared Hanson](https://github.com/jaredhanson)  |
 
-## Examples
+## 实例
 
 - For a complete, working example, refer to the [login example](https://github.com/jaredhanson/passport-local/tree/master/examples/login)
 included in [passport-local](https://github.com/jaredhanson/passport-local).
@@ -129,7 +129,7 @@ The [modules](https://github.com/jaredhanson/passport/wiki/Modules) page on the
 [wiki](https://github.com/jaredhanson/passport/wiki) lists other useful modules
 that build upon or integrate with Passport.
 
-## Tests
+## 测试
 
     $ npm install
     $ make test
@@ -138,7 +138,7 @@ that build upon or integrate with Passport.
 
   - [Jared Hanson](http://github.com/jaredhanson)
 
-## License
+## 许可证
 
 [The MIT License](http://opensource.org/licenses/MIT)
 
